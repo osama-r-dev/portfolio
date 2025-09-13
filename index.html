@@ -1,1 +1,177 @@
-<!-- push only the portfolio not the whole PROJECTS folder -->
+<!-- Notes: push only the portfolio not the whole PROJECTS folder -->
+
+<!-- References: 
+- I used https://ionic.io/ionicons to get the Icons.
+- I used https://getform.io/ to make the form down below works.
+- I used youtube to learn how to do the take to home button action. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/scripts/script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- the font im using -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      a {
+        text-decoration: none;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="frame">
+        <!-- nav bar -->
+        <nav class="nav-bar">
+          <a class="nav-elem" href="#about-me-section"
+            ><span class="nav-elem">About me</span></a
+          >
+          <a class="nav-elem" href="#projects-section"
+            ><span class="nav-elem">Projects</span></a
+          >
+          <a class="nav-elem" href="#contact-me-section"
+            ><span class="nav-elem">contact </span></a
+          >
+          <a href="#home"><span class="nav-elem">Home</span></a>
+        </nav>
+        <div class="hero-container container">
+          <div class="img-frame">
+            <img class="my-img" src="images/myimg.png" />
+          </div>
+
+          <div class="my-info-box">
+            <div class="info">
+              <h1 class="presnet">
+                I'm
+                <span class="my-name"
+                  >Osama<br />
+                  Al-Rehaili</span
+                >
+              </h1>
+              <h2 class="statement">Front-end Web developer</h2>
+            </div>
+            <div class="my-account-icons">
+              <a href="mailto:osama.r.rehaili@gmail.com">
+                <ion-icon class="icon" name="mail"></ion-icon
+              ></a>
+
+              <a href="https://github.com/osama-r-dev">
+                <ion-icon class="icon" name="logo-github"></ion-icon
+              ></a>
+
+              <a
+                href="  https://www.linkedin.com/in/osama-rehaili-456207371/?trk=opento_sprofile_topcard"
+                ><ion-icon class="icon" name="logo-linkedin"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT ME SECTION -->
+    <section id="about-me-section">
+      <div class="center-column">
+        <h3>About me</h3>
+        <div class="rect"></div>
+      </div>
+      <div class="about-me-box">
+        <p class="about-me-text">
+          I’m Osama Al-Rehaili, a Computer Science student with a passion for
+          web development. I’m fascinated by the digital world and love learning
+          something new every day. This portfolio reflects my journey, and I’m
+          eager to contribute my skills to real-world projects.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+
+    <section id="projects-section">
+      <div class="center-column">
+        <h3>Projects</h3>
+        <div class="rect"></div>
+      </div>
+      <div class="projects-box">
+        <div class="project-card">
+          <p class="project-name">Wifada Application</p>
+          <p class="project-description">
+            Wifada is a mobile application that aims to guide visitors and
+            pilligrams to the Al-Madina's historical and cultrual places
+          </p>
+        </div>
+        <div class="project-card">
+          <p class="project-name">Exam Gernerator tool</p>
+          <p class="project-description">
+            A tool I built along time ago using java that helped me practice
+            java I/O
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACTS SECTION -->
+    <section id="contact-me-section">
+      <div class="frame contact-frame">
+        <div class="contact-me center-column">Contact Me</div>
+        <form action="https://getform.io/f/brogplga" method="post">
+          <label class="label" for="name">Name:</label><br />
+          <input
+            class="field"
+            type="text"
+            id="name"
+            name="name"
+            required
+          /><br /><br />
+
+          <label class="label" for="email">Email:</label><br />
+          <input
+            class="field"
+            type="email"
+            id="email"
+            name="email"
+            required
+          /><br /><br />
+
+          <label class="label" for="message">Message:</label><br />
+          <textarea
+            class="field"
+            id="message"
+            name="message"
+            required
+          ></textarea
+          ><br /><br />
+
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <button id="toHomeButton"><strong>↑</strong></button>
+  </body>
+</html>
